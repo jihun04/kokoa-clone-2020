@@ -10,4 +10,5 @@
 @import "components/nav-bar.css";
 body {
   font-family: "Open Sans", sans-serif;
+  height: 1000vh;
 }
