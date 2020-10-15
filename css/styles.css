@@ -10,7 +10,7 @@
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
-
+@import "components/user-component.css";
 body {
   color: #2e363e;
   font-family: "Open Sans", sans-serif;
@@ -21,4 +21,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+}
+.screen-main__blank {
+  height: 100px;
+  width: 100px;
 }
