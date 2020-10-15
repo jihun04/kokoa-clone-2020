@@ -2,13 +2,23 @@
 @import "reset.css";
 @import "variables.css";
 
-/* components */
-@import "components/status-bar.css";
-
 /* screen */
 @import "screen/login.css";
+@import "screen/friends.css";
+
+/* components */
+@import "components/status-bar.css";
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
+
 body {
+  color: #2e363e;
   font-family: "Open Sans", sans-serif;
   height: 1000vh;
+}
+.position-box {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
