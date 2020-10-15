@@ -5,6 +5,7 @@
 /* screen */
 @import "screen/login.css";
 @import "screen/friends.css";
+@import "screen/find-account.css";
 
 /* components */
 @import "components/status-bar.css";
