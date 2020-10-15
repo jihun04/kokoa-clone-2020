@@ -1,6 +1,3 @@
-.different-body {
-  height: 100vh;
-}
 .account-screen-header,
 .account-screen-main {
   display: flex;
@@ -16,11 +13,10 @@
 .account-screen__title {
   font-size: 30px;
   font-weight: 600;
-  margin: 40px 0px 40px 0px;
+  margin: 40px 0px;
 }
 .account-screen__text1 {
   font-size: 25px;
-  font-weight: 400;
   margin-bottom: 30px;
 }
 .account-screen__text2 {
@@ -53,5 +49,7 @@
   width: 500px;
 }
 .account-screen__btn:focus {
+  background-color: silver;
+  color: aqua;
   width: 0px;
 }

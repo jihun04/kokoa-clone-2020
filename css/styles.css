@@ -17,6 +17,9 @@ body {
   font-family: "Open Sans", sans-serif;
   height: 1000vh;
 }
+.different-body {
+  height: 100vh;
+}
 .position-box {
   background-color: white;
   position: fixed;
