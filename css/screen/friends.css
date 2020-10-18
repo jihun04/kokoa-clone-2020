@@ -15,11 +15,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
-  color: var(--small-text-color);
+  color: var(--small-title-color);
 }
 .friends-screen__channel {
   margin-top: 25px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: var(--main-border);
   padding-top: 15px;
 }
 .friends-screen__channel i {

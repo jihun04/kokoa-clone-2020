@@ -34,12 +34,13 @@
   font-weight: 400;
 }
 .user-component__column:last-child {
-  color: var(--small-text-color);
+  color: var(--small-text-color2);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 .user-component__time {
+  color: var(--small-text-color3);
   display: block;
   margin-bottom: 8px;
 }

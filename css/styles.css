@@ -18,9 +18,6 @@
 body {
   color: #2e363e;
   font-family: "Open Sans", sans-serif;
-  height: 1000vh;
-}
-.different-body {
   height: 100vh;
 }
 .position-box {
@@ -30,8 +27,8 @@ body {
   width: 100%;
 }
 .main-screen__blank {
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
 }
 .main-screen {
   padding: 0px var(--horizontal-space);
