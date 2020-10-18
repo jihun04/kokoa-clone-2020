@@ -10,6 +10,7 @@
   width: 70px;
   height: 70px;
   border-radius: 38%;
+  margin-right: var(--horizontal-space);
 }
 .user-component__title {
   font-weight: 600;

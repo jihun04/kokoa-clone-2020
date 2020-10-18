@@ -6,6 +6,7 @@
 @import "screen/login.css";
 @import "screen/friends.css";
 @import "screen/find-account.css";
+@import "screen/main-screen.css";
 
 /* components */
 @import "components/status-bar.css";
@@ -26,7 +27,10 @@ body {
   top: 0;
   width: 100%;
 }
-.friends-screen__blank {
+.main-screen__blank {
   height: 100px;
   width: 100px;
+}
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
