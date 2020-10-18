@@ -37,27 +37,52 @@
     </header>
     </div>
 
-    <main class="screen-main">
-        <div class="screen-main__blank">
-            <span class=".....">Hello!</span>
-        </div>
+    <div class="friends-screen__blank">
+        <span class=".....">Hello!</span>
+    </div>
 
-        <a id="friends-display-link">
-            <i class="fas fa-info-circle"></i> Friends' Names Display  <i class="fas fa-chevron-right fa-xs"></i>
-        </a>
+    <a id="friends-display-link">
+        <i class="fas fa-info-circle"></i> Friends' Names Display  <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
         
+    <main class="friends-screen">
+
         <div class="user-component">
             <div class="user-component__column">
                 <img 
-                class="user-component__avatar" 
+                class="user-component__avatar user-component__avatar--xl" 
                 src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/serranoarevalo-avatar_rdjur3A.jpg" 
                 />
                 <div class="user-component__text">
                     <h4 class="user-component__title">Nicolas</h4>
-                    <h6 class="user-component__subtitle">this text</h6>
+                    <!-- <h6 class="user-component__subtitle">this text</h6> -->
                 </div>
             </div>
             <div class="usercomponent__column"></div>
+        </div>
+
+        <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+                <span>Channel</span>
+                <i class="fas fa-chevron-up fa-xs"></i>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img 
+                    class="user-component__avatar user-component__avatar--sm" 
+                    src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/serranoarevalo-avatar_rdjur3A.jpg" 
+                    />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
+                    </div>
+                </div>
+                <div class="usercomponent__column color--black--04">
+                    <span>2</span>
+                    <i class="fas fa-chevron-right fa-xs"></i>
+                   
+                </div>
+            </div>
+      
         </div>
 
     </main>

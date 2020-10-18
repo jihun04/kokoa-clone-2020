@@ -26,7 +26,10 @@ body {
   top: 0;
   width: 100%;
 }
-.screen-main__blank {
+.friends-screen__blank {
   height: 100px;
   width: 100px;
+}
+.color--black--04 {
+  color: rgba(0, 0, 0, 0.4);
 }

@@ -1,5 +1,5 @@
 .user-component {
-  display: flex;
+  justify-content: space-between;
 }
 .user-component,
 .user-component__column:first-child {
@@ -9,8 +9,7 @@
 .user-component__avatar {
   width: 70px;
   height: 70px;
-  border-radius: 27px;
-  margin: 20px;
+  border-radius: 38%;
 }
 .user-component__title {
   font-weight: 600;
@@ -20,4 +19,15 @@
   margin-top: 8px;
   font-size: 17px;
   color: rgba(0, 0, 0, 0.5);
+}
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+}
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+}
+.user-component__title--not-bold {
+  font-weight: 400;
 }
