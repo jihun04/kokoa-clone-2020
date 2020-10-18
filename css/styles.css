@@ -7,12 +7,14 @@
 @import "screen/friends.css";
 @import "screen/find-account.css";
 @import "screen/main-screen.css";
+@import "screen/find.css";
 
 /* components */
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
+@import "components/badge.css";
 body {
   color: #2e363e;
   font-family: "Open Sans", sans-serif;
@@ -33,4 +35,5 @@ body {
 }
 .main-screen {
   padding: 0px var(--horizontal-space);
+  margin-top: 16px;
 }

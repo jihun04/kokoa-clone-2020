@@ -1,5 +1,6 @@
 .user-component {
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 .user-component,
 .user-component__column:first-child {
@@ -34,4 +35,11 @@
 }
 .user-component__column:last-child {
   color: var(--small-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.user-component__time {
+  display: block;
+  margin-bottom: 8px;
 }

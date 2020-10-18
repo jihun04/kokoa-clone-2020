@@ -50,6 +50,6 @@
 }
 .account-screen__btn:focus {
   background-color: silver;
-  color: aqua;
+  color: silver;
   width: 0px;
 }
