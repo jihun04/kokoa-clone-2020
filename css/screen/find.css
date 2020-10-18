@@ -1,12 +1,16 @@
 .find-icons {
   display: flex;
   justify-content: space-between;
+  margin: 0px 3px;
 }
+/* @media screen and (max-width: 600px) and (min-width: 300px) {
+} */
 .find-icons__box {
+  text-align: center;
+  width: 22%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px 12px;
 }
 .find-icons__box i {
   font-size: 35px;
