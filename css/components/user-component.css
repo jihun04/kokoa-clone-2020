@@ -31,3 +31,6 @@
 .user-component__title--not-bold {
   font-weight: 400;
 }
+.user-component__column:last-child {
+  color: var(--small-text-color);
+}
