@@ -34,3 +34,49 @@
   color: var(--small-text-color2);
   margin: 100px 0px;
 }
+.open-chat__header {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--small-text-color3);
+  margin-bottom: 25px;
+}
+.open-chat__title {
+  color: var(--small-title-color);
+}
+.open-post {
+  display: flex;
+}
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 7px;
+  font-size: 17px;
+}
+.open-post__hashtags {
+  text-transform: uppercase;
+  color: var(--small-text-color2);
+}
+.open-post__members {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+.open-post__members img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.open-post__members-count {
+  font-size: 14px;
+  color: var(--small-text-color2);
+}
+.open-post__members .divider {
+  width: 1.3px;
+  height: 13px;
+  background-color: var(--small-text-color3);
+  margin: 0 5px;
+}
+.open-post__members-status {
+  color: #ffb0c0;
+}
