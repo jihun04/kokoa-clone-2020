@@ -14,15 +14,17 @@
 .nav__a {
   position: relative;
 }
-
+.nav__a i {
+  font-size: 25px;
+}
 .nav__chat__notification {
   position: absolute;
-  right: -15px;
-  top: -20px;
+  right: -13px;
+  top: -12px;
 }
 
 .nav__ellipsis__notification {
   position: absolute;
   right: -5px;
-  top: -13px;
+  top: -9px;
 }
