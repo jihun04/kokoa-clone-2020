@@ -3,8 +3,6 @@
   justify-content: space-between;
   margin: 0px 3px;
 }
-/* @media screen and (max-width: 600px) and (min-width: 300px) {
-} */
 .find-icons__box {
   text-align: center;
   width: 22%;
@@ -19,10 +17,27 @@
   margin-top: 18px;
 }
 .recommended-friends {
-  padding: 25px 0px;
+  padding: 25px 0 0 0;
   margin: 25px 0px;
   border-top: var(--main-border);
   border-bottom: var(--main-border);
+}
+@media screen and (max-width: 588px) {
+  .recommended-friends {
+    padding: 19px 0 0 0;
+    margin: 19px 0px;
+  }
+  .open-chat__header {
+    margin-bottom: 19px;
+  }
+}
+@media screen and (min-width: 410px) {
+  .find-icons {
+    margin: 0;
+  }
+  .find-icons__box {
+    width: 15%;
+  }
 }
 .recommended-friends__title {
   font-size: 14px;
