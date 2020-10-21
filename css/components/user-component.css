@@ -23,6 +23,8 @@
   font-size: 22px;
 }
 .user-component__subtitle {
+  display: flex;
+  align-items: center;
   margin-top: 8px;
   font-size: 17px;
   color: var(--small-text-color2);
