@@ -1,0 +1,47 @@
+.more-screen .user-component__subtitle i {
+  color: rgb(255, 91, 73, 0.8);
+}
+.more-screen .user-component:hover {
+  background-color: white;
+}
+.more-screen .user-component {
+  margin-bottom: 35px;
+}
+.more-screen__icons {
+  margin-bottom: 50px;
+}
+.more-screen .icon-row:first-child {
+  margin-bottom: 40px;
+}
+.more-suggestion {
+  border-top: var(--main-border);
+  padding-top: 40px;
+}
+.more-suggestion__title {
+  font-size: 14px;
+  color: var(--small-title-color);
+  margin-bottom: 30px;
+}
+.more-suggestion__icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px;
+}
+.more-suggestion__icon {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.more-suggestion__icon-image {
+  font-size: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--yellow);
+}

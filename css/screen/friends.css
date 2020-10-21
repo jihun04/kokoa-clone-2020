@@ -12,6 +12,7 @@
   padding: 10px var(--horizontal-space);
 }
 .friends-screen__channel-header {
+  font-size: 14px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
