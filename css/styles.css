@@ -9,6 +9,7 @@
 @import "screen/main-screen.css";
 @import "screen/find.css";
 @import "screen/more.css";
+@import "screen/settings.css";
 
 /* components */
 @import "components/status-bar.css";
@@ -17,6 +18,7 @@
 @import "components/user-component.css";
 @import "components/badge.css";
 @import "components/icon-raw.css";
+@import "components/alt-screen-header.css";
 
 body {
   color: #2e363e;
