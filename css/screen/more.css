@@ -34,24 +34,26 @@
 }
 .more-suggestion__icons {
   display: flex;
-  justify-content: space-between;
   margin: 0 5px;
 }
 .more-suggestion__icon {
+  margin-right: 30px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .more-suggestion__icon-image {
-  font-size: 30px;
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60px;
   height: 60px;
-  border-radius: 5px;
-  color: white;
+  border-radius: 10px;
   background-color: var(--yellow);
+}
+.more-suggestion__icon-image i {
+  font-size: 32px;
+  color: white;
 }
