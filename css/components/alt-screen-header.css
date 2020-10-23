@@ -9,9 +9,6 @@
   font-size: 28px;
   font-weight: 600;
 }
-.alt-header__column:first-child {
-  display: flex;
-}
 .alt-header__column:nth-child(2) {
   text-align: center;
 }
@@ -23,5 +20,6 @@
   width: 33%;
 }
 .alt-header__column:last-child span {
+  font-size: 26px;
   margin-left: 25px;
 }

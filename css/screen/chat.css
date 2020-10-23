@@ -2,3 +2,6 @@
 #chat-screen {
   background-color: #abc1d1;
 }
+#chat-screen {
+  height: 1000vh;
+}
