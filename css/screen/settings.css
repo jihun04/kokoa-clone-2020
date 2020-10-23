@@ -1,7 +1,7 @@
 .settings__setting {
   padding: 20px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,4 +10,7 @@
   color: rgba(0, 0, 0, 0.7);
   margin-right: 20px;
   font-size: 22px;
+}
+.settings__setting-column:last-child {
+  color: var(--small-text-color2);
 }
