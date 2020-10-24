@@ -9,6 +9,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 98px 0px 0px 0px;
   margin: 0px 130px 40px 130px;
+  position: relative;
 }
 
 .account-screen__title {
@@ -34,6 +35,7 @@
   width: 400px;
 }
 .account-screen__btn {
+  z-index: 2;
   text-align: center;
   cursor: pointer;
   width: 400px;
@@ -51,9 +53,29 @@
   width: 500px;
 }
 .account-screen__btn:focus {
+  z-index: 0;
   background-color: silver;
   color: silver;
   width: 0px;
+}
+.account-screen__login-btn {
+  z-index: 1;
+  position: absolute;
+  bottom: 60px;
+}
+.account-screen__login-btn button {
+  width: 300px;
+  height: 40px;
+  border: none;
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 50px;
+  transition: all 1s ease-out;
+}
+.account-screen__login-btn button:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  height: 0px;
+  color: black;
 }
 @media screen and (max-width: 770px) {
   .account-screen-main {

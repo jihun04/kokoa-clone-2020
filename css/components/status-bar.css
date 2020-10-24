@@ -16,8 +16,40 @@
 .status-bar__column:last-child {
   display: flex;
   justify-content: flex-end;
+  position: relative;
 }
 
 .status-bar__column .fa-battery-full {
   margin: 0px 5px;
+}
+.battery-overflow {
+  z-index: 1;
+  padding: 3px;
+  height: 47px;
+  width: 86px;
+  border-radius: 8px;
+  border-top-right-radius: 0;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  font-size: 14px;
+  text-align: start;
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  right: 30px;
+  top: 17px;
+  background-color: #f8f8f8;
+}
+.battery-overflow i {
+  position: absolute;
+  top: 0px;
+  right: 3px;
+}
+.battery-overflow:focus {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 0;
+  height: 0;
+  outline: none;
 }
