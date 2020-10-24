@@ -10,6 +10,7 @@
   padding: 98px 0px 0px 0px;
   margin: 0px 130px 40px 130px;
 }
+
 .account-screen__title {
   font-size: 30px;
   font-weight: 600;
@@ -43,6 +44,7 @@
   background-color: var(--yellow);
   margin: 50px 0px;
   transition: all 0.5s ease-in-out;
+  border-bottom: 0px solid var(--yellow);
 }
 .account-screen__btn:hover {
   background-color: silver;
@@ -52,4 +54,36 @@
   background-color: silver;
   color: silver;
   width: 0px;
+}
+@media screen and (max-width: 770px) {
+  .account-screen-main {
+    border: none;
+    padding: 98px 0px 0px 0px;
+    margin: 0;
+  }
+  .account-screen__btn:hover {
+    background-color: silver;
+    border-bottom: 100px solid silver;
+    width: 400px;
+  }
+  .account-screen__btn:focus {
+    background-color: silver;
+    color: silver;
+    width: 0px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .account-screen__btn:hover {
+    background-color: silver;
+    border-bottom: 30px solid silver;
+    width: 300px;
+  }
+  .account-screen__btn:focus {
+    background-color: silver;
+    color: silver;
+    width: 0px;
+  }
+  .account-screen__btn {
+    width: 300px;
+  }
 }
