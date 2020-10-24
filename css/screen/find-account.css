@@ -85,11 +85,11 @@
   }
   .account-screen__btn:hover {
     background-color: silver;
-    border-bottom: 100px solid silver;
-    width: 400px;
+    border-radius: 10px;
   }
   .account-screen__btn:focus {
     background-color: silver;
+    border-bottom: 50px solid silver;
     color: silver;
     width: 0px;
   }
@@ -97,15 +97,18 @@
 @media screen and (max-width: 450px) {
   .account-screen__btn:hover {
     background-color: silver;
-    border-bottom: 30px solid silver;
     width: 300px;
   }
   .account-screen__btn:focus {
     background-color: silver;
     color: silver;
     width: 0px;
+    border-bottom: 30px solid silver;
   }
   .account-screen__btn {
     width: 300px;
+  }
+  .account-screen__login-btn button {
+    width: 200px;
   }
 }

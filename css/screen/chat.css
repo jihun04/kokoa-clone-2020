@@ -82,6 +82,7 @@
 .reply input {
   width: 100%;
   border: var(--main-border);
+  background-color: #f8f8f8;
   padding: 12px;
   border-radius: 20px;
   box-sizing: border-box;
