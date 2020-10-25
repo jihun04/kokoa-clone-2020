@@ -21,6 +21,7 @@
 @import "components/icon-raw.css";
 @import "components/alt-screen-header.css";
 @import "components/splash-screen.css";
+@import "components/no-mobile.css";
 
 body {
   color: #2e363e;
