@@ -51,19 +51,10 @@
     transform: none;
   }
 }
-@keyframes appearBorderAnimation {
-  from {
-    border-top: 50px solid rgba(0, 0, 0, 0.3);
-  }
-  to {
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
-  }
-}
 .nav {
   transform: translateY(50px);
   opacity: 0;
-  animation: appearBorderAnimation 0.3s ease-in-out forwards,
-    appearBtnAnimation 0.3s ease-in-out forwards;
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
 }
 .nav__li {
   transform: translateY(50px);

@@ -28,6 +28,7 @@ body {
   height: 100vh;
 }
 .position-box {
+  z-index: 1;
   background-color: white;
   position: fixed;
   top: 0;
