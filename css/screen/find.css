@@ -102,3 +102,21 @@
 .open-post__heart-count i {
   margin-right: 4px;
 }
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.4);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 0.5s linear infinite;
+}
