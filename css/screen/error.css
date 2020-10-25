@@ -1,0 +1,121 @@
+.error-icon {
+  transition: all 10s ease-in-out;
+}
+.error-icon:hover {
+  animation: rotateIcon 0.2s linear infinite;
+  opacity: 0;
+}
+.error-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.error-text span {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.error-text h4 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: tomato;
+}
+.error-text h4 i {
+  margin-left: 4px;
+  color: tomato;
+}
+.error-text h4 i:last-child {
+  margin-left: 20px;
+  color: var(--yellow);
+}
+@keyframes errorScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.splash-screen1 i,
+.splash-screen2 i,
+.splash-screen3 i,
+.splash-screen4 i,
+.splash-screen5 i,
+.splash-screen6 i {
+  position: relative;
+}
+.splash-screen1,
+.splash-screen2,
+.splash-screen3,
+.splash-screen4,
+.splash-screen5,
+.splash-screen6 {
+  animation: errorScreen 0s linear forwards;
+  background-color: var(--yellow);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-weight: 600;
+}
+.splash-screen1 {
+  z-index: 9;
+  animation-delay: 1s;
+}
+.splash-screen2 {
+  z-index: 8;
+  animation-delay: 2s;
+}
+.splash-screen3 {
+  z-index: 7;
+  animation-delay: 3s;
+}
+.splash-screen4 {
+  z-index: 6;
+  animation-delay: 4s;
+}
+.splash-screen5 {
+  z-index: 5;
+  animation-delay: 5s;
+}
+.splash-screen6 {
+  z-index: 4;
+  animation-delay: 6s;
+}
+.splash-screen1 .battery,
+.splash-screen2 .battery,
+.splash-screen3 .battery,
+.splash-screen4 .battery,
+.splash-screen5 .battery,
+.splash-screen6 .battery {
+  background-color: #2e363e;
+  width: 53px;
+  height: 15px;
+  position: absolute;
+  left: 10px;
+  top: 23px;
+}
+.splash-screen2 .battery {
+  width: 60px;
+}
+.splash-screen3 .battery {
+  width: 70px;
+}
+.splash-screen4 .battery {
+  width: 80px;
+}
+.splash-screen5 .battery {
+  width: 90px;
+}
+.splash-screen6 .battery {
+  width: 100px;
+}

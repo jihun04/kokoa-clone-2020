@@ -33,16 +33,23 @@
   width: 100%;
   margin-bottom: 25px;
   display: flex;
+  animation: messageAppear 0.5s ease-in-out;
 }
 .message-row img {
   width: 50px;
   height: 50px;
   border-radius: 38%;
   margin-right: 10px;
+  cursor: pointer;
 }
 .message__author {
   display: block;
   margin-bottom: 6px;
+  transition: all 0.5s ease-in-out;
+}
+.message__author:hover {
+  font-weight: 600;
+  transform: scale(1.3) translateX(10px);
 }
 .message__bubble {
   background-color: white;
@@ -51,6 +58,11 @@
   border-top-left-radius: 0px;
   margin-right: 5px;
   font-size: 18px;
+  transition: all 2s ease-in-out;
+}
+.message__bubble:hover {
+  font-size: 20px;
+  animation: messageBubbleHover 2s ease-in-out infinite;
 }
 .message__info {
   display: flex;
@@ -63,6 +75,34 @@
 }
 .message-row--own {
   justify-content: flex-end;
+  animation: messageAppear--own 0.5s ease-in-out;
+}
+@keyframes messageAppear {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes messageAppear--own {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes messageBubbleHover {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .message-row--own .message__bubble {
   background-color: var(--yellow);

@@ -4,8 +4,8 @@
   height: 0px;
   opacity: 0;
   transition: all 0.5s ease-out;
-  animation: appearUserAnimation 0.2s ease-in-out forwards,
-    opacityAnimation 0.7s ease-in-out forwards;
+  animation: appearUserAnimation 0.5s ease-in-out forwards,
+    opacityAnimation 0.5s ease-in-out forwards;
 }
 .user-component:hover {
   background-color: #f2f2f3;
@@ -56,11 +56,14 @@
   margin-bottom: 8px;
 }
 @keyframes appearUserAnimation {
-  from {
+  0% {
     height: 0px;
   }
-  to {
+  50% {
     height: 70px;
+  }
+  100% {
+    height: auto;
   }
 }
 @keyframes opacityAnimation {

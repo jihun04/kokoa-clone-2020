@@ -1,6 +1,6 @@
 .settings__setting {
   padding: 20px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -11,6 +11,13 @@
   margin-right: 20px;
   font-size: 22px;
 }
+.settings__setting:last-child {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
 .settings__setting-column:last-child {
   color: var(--small-text-color2);
+}
+.settings-list:nth-child(2) .settings__setting:last-child {
+  border: none;
 }
