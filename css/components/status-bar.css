@@ -41,7 +41,7 @@
   box-sizing: border-box;
   right: 30px;
   top: 17px;
-  background-color: #f8f8f8;
+  background-color: tomato;
 }
 .battery-overflow i {
   position: absolute;
