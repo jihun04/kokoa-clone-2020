@@ -20,6 +20,7 @@
 @import "components/badge.css";
 @import "components/icon-raw.css";
 @import "components/alt-screen-header.css";
+@import "components/splash-screen.css";
 
 body {
   color: #2e363e;
