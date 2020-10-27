@@ -11,6 +11,10 @@
 .friends-screen {
   padding: 10px var(--horizontal-space);
 }
+.friends-screen i {
+  color: var(--icon-color);
+}
+
 .friends-screen__channel-header {
   font-size: 14px;
   display: flex;
@@ -23,6 +27,23 @@
   border-top: var(--main-border);
   padding-top: 15px;
 }
-.friends-screen__channel i {
-  color: var(--icon-color);
+
+.friends-screen__friend {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+.friends-screen__title-column {
+  display: flex;
+}
+.friends-screen__title-column span {
+  margin-left: 10px;
+  font-size: 13px;
+}
+.friends-screen__friend-header {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  color: var(--small-title-color);
 }
