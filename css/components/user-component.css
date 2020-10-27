@@ -101,3 +101,17 @@ a:nth-child(9) .user-component {
 a:nth-child(10) .user-component {
   animation-delay: 0.9s;
 }
+
+.user-component__music {
+  cursor: pointer;
+  color: #2e363e;
+  background-color: white;
+  border: 2px solid #24d457;
+  border-radius: 30px;
+  padding: 5px 8px;
+  font-size: 14px;
+}
+.user-component__music:active,
+.user-component__music:focus {
+  outline: none;
+}
