@@ -24,7 +24,6 @@
   border: none;
   padding: 15px 0px;
   font-size: 18px;
-
   margin-bottom: 25px;
 }
 #login-form input:not([type="submit"]) {

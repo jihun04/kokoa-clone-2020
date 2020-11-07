@@ -16,7 +16,7 @@
             <i class="fas fa-wifi"></i>
         </div>
         <div class="status-bar__column">
-            <span>18:43</span>
+            <span class="clock">18:43</span>
 
         </div>
         <div class="status-bar__column">
@@ -52,7 +52,6 @@
     </a>
         
     <main class="friends-screen">
-
         <div class="user-component">
             <div class="user-component__column">
                 <img 
@@ -60,11 +59,20 @@
                 src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/serranoarevalo-avatar_rdjur3A.jpg" 
                 />
                 <div class="user-component__text">
-                    <h4 class="user-component__title">Nicolas</h4>
+                    <h4 class="user-component__title js-user-name display-none">Nicolas</h4>
                     <!-- <h6 class="user-component__subtitle">this text</h6> -->
+                    <form class="user-name-form display-none">
+                        <input type="text" placeholder="What your name?"/>
+                    </form>
                 </div>
             </div>
-            <div class="usercomponent__column"></div>
+            <div class="usercomponent__column">
+                <a href="index.html" class="logout-btn">
+                    <span>
+                        logOut <i class="fas fa-times"></i>
+                    </span>
+                </a>
+            </div>
         </div>
 
         <div class="friends-screen__channel">
@@ -187,6 +195,9 @@
     </nav>
 
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <script src="clock.js"></script>
+    <script src="logout.js"></script>
+    <script src="paint-user-name.js"></script>
 </body>
 
 </html>

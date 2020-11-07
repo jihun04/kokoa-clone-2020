@@ -16,7 +16,7 @@
             <i class="fas fa-wifi"></i>
         </div>
         <div class="status-bar__column">
-            <span>18:43</span>
+            <span class="clock">18:43</span>
 
         </div>
         <div class="status-bar__column">
@@ -51,12 +51,21 @@
                 src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/serranoarevalo-avatar_rdjur3A.jpg" 
                 />
                 <div class="user-component__text">
-                    <h4 class="user-component__title">Nicolas</h4>
+                    <h4 class="user-component__title js-user-name display-none">Nicolas</h4>
+                    <!-- <h6 class="user-component__subtitle">this text</h6> -->
+                    <form class="user-name-form display-none">
+                        <input type="text" placeholder="What your name?"/>
+                    </form>
                     <h6 class="user-component__subtitle">+0 777-666-555 <div class="user-component__1-circle">!</div></h6>
                 </div>
             </div>
-            <div class="usercomponent__column">
+            <div class="usercomponent__column user-component__column--column">
                 <i class="far fa-comment-alt fa-2x"></i>
+                <a href="index.html" class="logout-btn">
+                    <span>
+                        logOut <i class="fas fa-times"></i>
+                    </span>
+                </a>
             </div>   
         </div>
 
@@ -148,6 +157,9 @@
     </nav>
 
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <script src="clock.js"></script>
+    <script src="logout.js"></script>
+    <script src="paint-user-name.js"></script>
 </body>
 
 </html>
