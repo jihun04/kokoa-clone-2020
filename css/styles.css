@@ -28,6 +28,7 @@ body {
   font-family: "Open Sans", sans-serif;
   height: 100vh;
 }
+
 .position-box {
   z-index: 1;
   background-color: white;
@@ -35,6 +36,7 @@ body {
   top: 0;
   width: 100%;
 }
+
 .main-screen__blank {
   height: 90px;
   width: 90px;
@@ -42,4 +44,11 @@ body {
 .main-screen {
   padding: 0px var(--horizontal-space);
   margin-top: 16px;
+}
+
+.display-none {
+  display: none;
+}
+.showing {
+  display: block;
 }

@@ -16,6 +16,14 @@
   display: flex;
   align-items: center;
 }
+.user-component__column--column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.user-component__column--column .logout-btn {
+  margin-top: 10px;
+}
 .user-component__avatar {
   width: 70px;
   height: 70px;
@@ -114,4 +122,20 @@ a:nth-child(10) .user-component {
 .user-component__music:active,
 .user-component__music:focus {
   outline: none;
+}
+
+.logout-btn {
+  color: var(--small-text-color2);
+}
+
+.user-name-form input {
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-out;
+  width: 160px;
+}
+.user-component:hover .user-name-form input {
+  background-color: #f2f2f3;
+  border-bottom: 3px solid rgba(177, 121, 108, 0.5);
 }

@@ -15,7 +15,7 @@
             <i class="fas fa-wifi"></i>
         </div>
         <div class="status-bar__column">
-            <span>18:43</span>
+            <span class="clock">18:43</span>
 
         </div>
         <div class="status-bar__column">
@@ -31,8 +31,8 @@
     </header>
  
     <form action="freinds.html" method="GET" id="login-form">
-        <input required name="username" type="text" placeholder="Email or phone number"/>
-        <input required name="Password" type="Password" placeholder="Password"/>
+        <input class="js-user-name-input" required name="username" type="text" placeholder="Name"/>
+        <input name="Password" type="Password" placeholder="Password"/>
         <input type="submit" value="Log In" />
         <a href="find-account.html">Find Kokoa Account or Password</a>
     </form>
@@ -42,6 +42,8 @@
     </div>
 
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <script src="clock.js"></script>
+    <script src="save-user-name.js"></script>
 </body>
 
 </html>
