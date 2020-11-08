@@ -1,0 +1,94 @@
+.bg-color-setting-list,
+.color-setting-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.color-setting-li {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 99%;
+}
+.color-btn {
+  margin: 0 10px;
+  padding: 30px 0;
+  border-radius: 10px;
+  width: 99%;
+  border: none;
+}
+.color1 {
+  color: #275aab;
+}
+.color1-btn {
+  background-color: #275aab;
+}
+.color2,
+.color2-btn {
+  background-color: #ff706c;
+}
+.color3 {
+  color: #552a4e;
+}
+.color3-btn {
+  background-color: #552a4e;
+}
+.color4,
+.color4-btn {
+  background-color: var(--yellow);
+}
+.color5 {
+  color: #2c1e2b;
+}
+.color5-btn {
+  background-color: #2c1e2b;
+}
+.color6 {
+  color: #7b7373;
+}
+.color6-btn {
+  background-color: #7b7373;
+}
+.color7,
+.color7-btn {
+  background-color: #ffe1b3;
+}
+.color8,
+.color8-btn {
+  background-color: #f29696;
+}
+.color9,
+.color9-btn {
+  background-color: #8c897e;
+}
+.color10,
+.color10-btn {
+  background-color: #759389;
+}
+.color11,
+.color11-btn {
+  background-color: #d8b4ae;
+}
+.color12 {
+  color: #a2806e;
+}
+.color12-btn {
+  background-color: #a2806e;
+}
+.color13 {
+  color: #b87246;
+}
+.color13-btn {
+  background-color: #b87246;
+}
+.color14 {
+  color: #ba326d;
+}
+.color14-btn {
+  background-color: #ba326d;
+}
+.color15,
+.color15-btn {
+  background-color: #faf4f9;
+}

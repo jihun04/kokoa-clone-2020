@@ -11,6 +11,7 @@
 @import "screen/settings.css";
 @import "screen/chat.css";
 @import "screen/error.css";
+@import "screen/bg-color-setting.css";
 
 /* components */
 @import "components/status-bar.css";
