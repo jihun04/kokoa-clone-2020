@@ -139,3 +139,13 @@ a:nth-child(10) .user-component {
   background-color: #f2f2f3;
   border-bottom: 3px solid rgba(177, 121, 108, 0.5);
 }
+
+.custom-user .user-component__text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.custom-user .del-friend-btn {
+  cursor: pointer;
+}

@@ -60,3 +60,55 @@
   height: 0;
   outline: none;
 }
+
+.no-wifi {
+  position: relative;
+}
+.no-wifi .status-bar__bar {
+  width: 2.5px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #2e363e;
+  border: 1px solid #abc1d1;
+  position: absolute;
+  right: 7px;
+  top: -4px;
+  transition: all 4s ease-in-out;
+  animation: bar-dance 5s ease-in-out infinite;
+}
+@keyframes bar-dance {
+  0% {
+    transform: rotateZ(-45deg);
+    border: 1px solid #abc1d1;
+    opacity: 1;
+  }
+  25% {
+    border: 2px solid #abc1d1;
+    opacity: 0.5;
+  }
+  50% {
+    transform: rotateZ(45deg);
+    border: 1px solid #abc1d1;
+    opacity: 1;
+  }
+  75% {
+    border: 2px solid #abc1d1;
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotateZ(-45deg);
+    border: 1px solid #abc1d1;
+    opacity: 1;
+  }
+}
+.no-wifi:hover .status-bar__bar {
+  animation: bar-Dance 0.4s linear infinite;
+}
+@keyframes bar-Dance {
+  from {
+    transform: rotateZ(360deg) rotateY(360deg) rotateX(360deg);
+  }
+  to {
+    transform: none;
+  }
+}
