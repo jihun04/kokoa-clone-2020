@@ -35,15 +35,35 @@
 }
 .friends-screen__title-column {
   display: flex;
+  font-size: 14px;
 }
 .friends-screen__title-column span {
   margin-left: 10px;
-  font-size: 13px;
 }
 .friends-screen__friend-header {
-  font-size: 14px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
   color: var(--small-title-color);
+  margin-bottom: 30px;
+}
+.friends-screen__friend-header--margin25px {
+  margin-bottom: 25px;
+}
+.add-friend-form input {
+  width: 90px;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: none;
+  transition: all 0.5s ease-in-out;
+}
+.add-friend-form input::placeholder {
+  color: var(--small-text-color2);
+}
+.add-friend-form input:focus {
+  width: 200px;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: none;
 }

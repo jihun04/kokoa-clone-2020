@@ -103,8 +103,29 @@
             <div class="friends-screen__friend-header">
                 <div class="friends-screen__title-column">
                     <h4>friend</h4>
-                    <span>3</span>
+                    <span class="friends-nth">3</span>
                 </div>
+                <div class="friends-screen__column">
+                    <form class="add-friend-form display-none">
+                        <input type="text" placeholder="Add friend"/>
+                    </form>
+                </div>
+            </div>
+
+            <div class="user-component custom-user display-none">
+                <div class="user-component__column">
+                    <img 
+                    class="user-component__avatar user-component__avatar--sm" 
+                    src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/serranoarevalo-avatar_rdjur3A.jpg" 
+                    />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold custom-friend-name">Nocolas</h4>
+                        <span class="del-friend-btn">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="user-component__column"></div>
             </div>
 
             <div class="user-component">
@@ -198,6 +219,8 @@
     <script src="clock.js"></script>
     <script src="logout.js"></script>
     <script src="paint-user-name.js"></script>
+    <script src="add-friend.js"></script>
+    <script src="del-friend.js"></script>
 </body>
 
 </html>

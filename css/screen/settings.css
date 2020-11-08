@@ -8,7 +8,7 @@
 }
 .settings__setting i {
   color: rgba(0, 0, 0, 0.7);
-  margin-right: 20px;
+
   font-size: 22px;
 }
 .settings__setting:last-child {
@@ -20,4 +20,16 @@
 }
 .settings-list:nth-child(2) .settings__setting:last-child {
   border: none;
+}
+.settings__setting-column {
+  display: flex;
+  align-items: center;
+}
+
+.range-box {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
 }

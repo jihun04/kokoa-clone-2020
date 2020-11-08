@@ -15,6 +15,7 @@
   position: relative;
 }
 .screen-header__cog-notification {
+  cursor: pointer;
   position: absolute;
   top: -8px;
   right: -6px;
