@@ -1,5 +1,7 @@
 .bg-color-setting-box,
-.color-setting-box {
+.bg-color-setting-box--open,
+.color-setting-box,
+.color-setting-box--open {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -17,7 +19,8 @@
   justify-content: center;
   width: 99%;
 }
-.color-setting-li:last-child {
+.bg-color-setting-box,
+.bg-color-setting--open {
   padding-bottom: 15px;
   border-bottom: var(--main-border);
   margin-bottom: 15px;

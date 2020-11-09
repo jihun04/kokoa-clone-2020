@@ -1,155 +1,174 @@
 <!DOCTYPE html>
 <html lang="kr">
-
-<head>
-    <link rel="stylesheet" href="css/styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Settings - Kokoa Clone</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="position-box">
-        <div class="status-bar">
-            <div class="status-bar__column">
-                <span>No service</span>
-                <i class="fas fa-wifi"></i>
-            </div>
-            <div class="status-bar__column">
-                <span class="clock">18:43</span>
-
-            </div>
-            <div class="status-bar__column">
-                <span>110%</span>
-                <i class="fas fa-battery-full fa-lg"></i>
-                <i class="fas fa-bolt"></i>
-            </div> 
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>No service</span>
+          <i class="fas fa-wifi"></i>
         </div>
+        <div class="status-bar__column">
+          <span class="clock">18:43</span>
+        </div>
+        <div class="status-bar__column">
+          <span>110%</span>
+          <i class="fas fa-battery-full fa-lg"></i>
+          <i class="fas fa-bolt"></i>
+        </div>
+      </div>
 
-        <header class="alt-header">
-            <div class="alt-header__column">
-                <a href="more.html">
-                    <i class="fas fa-chevron-left fa-2x"></i>
-                </a>
-            </div>
-            <div class="alt-header__column">
-                <h1 class="alt-header__title long-span-title">Color Setting</h1>
-            </div>
-            <div class="alt-header__column">
-                <span class="init-color-btn">
-                    <i class="fas fa-times"></i>
-                </span>
-            </div>
-        </header>
+      <header class="alt-header">
+        <div class="alt-header__column">
+          <a href="more.html">
+            <i class="fas fa-chevron-left fa-2x"></i>
+          </a>
+        </div>
+        <div class="alt-header__column">
+          <h1 class="alt-header__title long-span-title">Color Setting</h1>
+        </div>
+        <div class="alt-header__column">
+          <span class="init-color-btn">
+            <i class="fas fa-times"></i>
+          </span>
+        </div>
+      </header>
     </div>
 
-    <div class="main-screen__blank ">
-        <span class=".....">Hello!</span>
+    <div class="main-screen__blank">
+      <span class=".....">Hello!</span>
     </div>
 
     <main class="main-screen color-list-box">
-        <div class="bg-color-setting-box">
-            <span>Background Color</span>
-            <span>
-                <i class="fas fa-chevron-down fa-xs"></i>
-            </span>
+      <div class="bg-color-setting-box">
+        <span>Background Color</span>
+        <span>
+          <i class="fas fa-chevron-down fa-xs"></i>
+        </span>
+      </div>
+
+      <div class="bg-color-setting--open display-none">
+        <div class="bg-color-setting-box--open">
+          <span>Background Color</span>
+          <span>
+            <i class="fas fa-chevron-up fa-xs"></i>
+          </span>
         </div>
 
         <ul class="bg-color-setting-list">
-            <li class="color2-li color-setting-li">
-                <button class="color2-btn color-btn"></button>
-            </li>
-            <li class="color4-li color-setting-li">
-                <button class="color4-btn color-btn"></button>
-            </li>
-            <li class="color7-li color-setting-li">
-                <button class="color7-btn color-btn"></button>
-            </li>
-            <li class="color8-li color-setting-li">
-                <button class="color8-btn color-btn"></button>
-            </li>
-            <li class="color9-li color-setting-li">
-                <button class="color9-btn color-btn"></button>
-            </li>
-            <li class="color10-li color-setting-li">
-                <button class="color10-btn color-btn"></button>
-            </li>
-            <li class="color11-li color-setting-li">
-                <button class="color11-btn color-btn"></button>
-            </li>
-            <li class="color15-li color-setting-li">
-                <button class="color15-btn color-btn"></button>
-            </li>
+          <li class="color2-li color-setting-li">
+            <button class="color2-btn color-btn"></button>
+          </li>
+          <li class="color4-li color-setting-li">
+            <button class="color4-btn color-btn"></button>
+          </li>
+          <li class="color7-li color-setting-li">
+            <button class="color7-btn color-btn"></button>
+          </li>
+          <li class="color8-li color-setting-li">
+            <button class="color8-btn color-btn"></button>
+          </li>
+          <li class="color9-li color-setting-li">
+            <button class="color9-btn color-btn"></button>
+          </li>
+          <li class="color10-li color-setting-li">
+            <button class="color10-btn color-btn"></button>
+          </li>
+          <li class="color11-li color-setting-li">
+            <button class="color11-btn color-btn"></button>
+          </li>
+          <li class="color15-li color-setting-li">
+            <button class="color15-btn color-btn"></button>
+          </li>
         </ul>
+      </div>
 
-        <div class="color-setting-box">
-            <span>Color</span>
-            <span>
-                <i class="fas fa-chevron-down fa-xs"></i>
-            </span>
+      <div class="color-setting-box">
+        <span>Color</span>
+        <span>
+          <i class="fas fa-chevron-down fa-xs"></i>
+        </span>
+      </div>
+
+      <div class="color-setting--open display-none">
+        <div class="color-setting-box--open">
+          <span>Color</span>
+          <span>
+            <i class="fas fa-chevron-up fa-xs"></i>
+          </span>
         </div>
 
         <ul class="color-setting-list">
-            <li class="color1-li color-setting-li">
-                <button class="color1-btn color-btn"></button>
-            </li>
-            <li class="color3-li color-setting-li">
-                <button class="color3-btn color-btn"></button>
-            </li>
-            <li class="color5-li color-setting-li">
-                <button class="color5-btn color-btn"></button>
-            </li>
-            <li class="color6-li color-setting-li">
-                <button class="color6-btn color-btn"></button>
-            </li>
-            <li class="color14-li color-setting-li">
-                <button class="color14-btn color-btn"></button>
-            </li>
-            <li class="color12-li color-setting-li">
-                <button class="color12-btn color-btn"></button>
-            </li>
-            <li class="color13-li color-setting-li">
-                <button class="color13-btn color-btn"></button>
-            </li>
+          <li class="color1-li color-setting-li">
+            <button class="color1-btn color-btn"></button>
+          </li>
+          <li class="color3-li color-setting-li">
+            <button class="color3-btn color-btn"></button>
+          </li>
+          <li class="color5-li color-setting-li">
+            <button class="color5-btn color-btn"></button>
+          </li>
+          <li class="color6-li color-setting-li">
+            <button class="color6-btn color-btn"></button>
+          </li>
+          <li class="color14-li color-setting-li">
+            <button class="color14-btn color-btn"></button>
+          </li>
+          <li class="color12-li color-setting-li">
+            <button class="color12-btn color-btn"></button>
+          </li>
+          <li class="color13-li color-setting-li">
+            <button class="color13-btn color-btn"></button>
+          </li>
         </ul>
-
+      </div>
     </main>
-    
+
     <div class="main-screen__blank">
-        <span class="....."></span>
+      <span class="....."></span>
     </div>
 
     <nav class="nav">
-        <ul class="nav__ul">
-            <li class="nav__li">
-                <a class="nav__a" href="freinds.html">
-                    <i class="far fa-user fa-2x"></i>
-                </a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__a" href="chats.html">
-                    <i class="far fa-comment fa-2x"></i>
-                </a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__a" href="find.html">
-                    <i class="fas fa-search fa-2x"></i>
-                </a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__a" href="more.html">
-                    <div class="nav__ellipsis__notification"></div>
-                    <i class="fas fa-ellipsis-h fa-2x"></i>
-                </a>
-            </li>
-        </ul>
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a class="nav__a" href="freinds.html">
+            <i class="far fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="chats.html">
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="find.html">
+            <i class="fas fa-search fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="more.html">
+            <div class="nav__ellipsis__notification"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
     </nav>
 
-    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="clock.js"></script>
     <script src="const.js"></script>
     <script src="color.js"></script>
     <script src="load-color-setting-for-alt.js"></script>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
     <script src="color-list.js"></script>
@@ -157,3 +176,8 @@
 </body>
 
 </html>
+=======
+    <script src="color-list.js"></script>
+  </body>
+</html>
+>>>>>>> master
