@@ -1,5 +1,4 @@
-const loginForm = document.querySelector("#login-form"),
-loginInput = loginForm.querySelector(".js-user-name-input");
+const loginForm = document.querySelector("#login-form");
 
 const USERNAME_LS = "user-name";
 
@@ -8,7 +7,7 @@ function saveName(text) {
 }
 
 function handleSubmit() {
-    const currentName = loginInput.value;
+    const currentName = loginNameInput.value;
     saveName(currentName);
 }
 
