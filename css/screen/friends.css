@@ -53,6 +53,7 @@
   width: 90px;
   text-align: center;
   font-size: 12px;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-top: none;
   transition: all 0.5s ease-in-out;

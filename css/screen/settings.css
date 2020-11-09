@@ -7,8 +7,6 @@
   justify-content: space-between;
 }
 .settings__setting i {
-  color: rgba(0, 0, 0, 0.7);
-
   font-size: 22px;
 }
 .settings__setting:nth-child(3) {
