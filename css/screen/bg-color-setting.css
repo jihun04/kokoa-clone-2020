@@ -4,7 +4,17 @@
 .color-setting-box--open {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
+  cursor: pointer;
+}
+.bg-color-setting-box--open,
+.color-setting-box--open {
   margin-bottom: 20px;
+  border-bottom: var(--main-border);
+}
+.bg-color-setting-box,
+.bg-color-setting--open {
+  border-bottom: var(--main-border);
 }
 .bg-color-setting-list,
 .color-setting-list {
@@ -19,18 +29,13 @@
   justify-content: center;
   width: 99%;
 }
-.bg-color-setting-box,
-.bg-color-setting--open {
-  padding-bottom: 15px;
-  border-bottom: var(--main-border);
-  margin-bottom: 15px;
-}
 .color-btn {
   margin: 0 10px;
   padding: 30px 0;
   border-radius: 10px;
-  width: 99%;
   border: none;
+  width: 99%;
+  cursor: pointer;
 }
 .color1 {
   color: #275aab;
