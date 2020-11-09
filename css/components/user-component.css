@@ -113,7 +113,7 @@ a:nth-child(10) .user-component {
 .user-component__music {
   cursor: pointer;
   color: #2e363e;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   border: 2px solid #24d457;
   border-radius: 30px;
   padding: 5px 8px;
