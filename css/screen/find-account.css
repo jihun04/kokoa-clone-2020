@@ -7,7 +7,7 @@
 }
 .account-screen-main {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 98px 0px 0px 0px;
+  padding-top: 50px;
   margin: 0px 130px 40px 130px;
   position: relative;
 }
@@ -15,7 +15,7 @@
 .account-screen__title {
   font-size: 30px;
   font-weight: 600;
-  margin: 40px 0px;
+  margin: 40px 0 20px 0;
 }
 .account-screen__text1 {
   font-size: 25px;
@@ -80,7 +80,6 @@
 @media screen and (max-width: 770px) {
   .account-screen-main {
     border: none;
-    padding: 98px 0px 0px 0px;
     margin: 0;
   }
   .account-screen__btn:hover {
