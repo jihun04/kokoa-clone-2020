@@ -1,7 +1,7 @@
 const userComponentOwn = document.querySelector(".user-component--own"),
 userAvatarImg = userComponentOwn.querySelector(".user-component__avatar--own");
 
-const IMG_NUMBER = 5,
+const IMG_NUMBER = 17,
 AVATARIMG_LS = "avatar-img";
 
 function genRandom() {
