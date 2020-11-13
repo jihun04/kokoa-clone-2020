@@ -44,10 +44,10 @@
     </div>
 
     <main class="main-screen more-screen">
-        <div class="user-component">
+        <div class="user-component user-component--own">
             <div class="user-component__column">
                 <img 
-                class="user-component__avatar user-component__avatar--xl" 
+                class="user-component__avatar user-component__avatar--xl user-component__avatar--own" 
                 src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/serranoarevalo-avatar_rdjur3A.jpg" 
                 />
                 <div class="user-component__text">
@@ -72,30 +72,45 @@
         <div class="more-screen__icons">
             <div class="icon-row">
                 <div class="icon-row__box">
-                    <i class="far fa-calendar"></i>
+                    <a href="infinite-loop.html">
+                        <i class="far fa-calendar"></i>
+                    </a>
                     <span>Calendar</span>
-                  </div>
-                  <div class="icon-row__box">
-                    <i class="far fa-smile-beam"></i>
+                </div>
+
+                <div class="icon-row__box">
+                    <a href="infinite-loop.html">
+                        <i class="far fa-smile-beam"></i>
+                    </a>
                     <span>Emoticons</span>
-                  </div>
-                  <div class="icon-row__box">
-                    <i class="fas fa-paint-roller"></i>
+                </div>
+
+                <div class="icon-row__box">
+                    <a href="infinite-loop.html">
+                        <i class="fas fa-paint-roller"></i>
+                    </a>
                     <span>Themes</span>
-                  </div>
-                  <div class="icon-row__box">
-                    <i class="fas fa-file-invoice-dollar"></i>
+                </div>
+
+                <div class="icon-row__box">
+                    <a href="infinite-loop.html">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </a>
                     <span>Account</span>
-                  </div>
+                </div>
             </div>
 
             <div class="icon-row">
                 <div class="icon-row__box"> 
-                    <i class="fas fa-comments"></i>
+                    <a href="infinite-loop.html">
+                        <i class="fas fa-comments"></i>
+                    </a>
                     <span>Openchat</span>
                 </div>
                 <div class="icon-row__box">
-                    <i class="fab fa-google-drive"></i>
+                    <a href="infinite-loop.html">
+                        <i class="fab fa-google-drive"></i>
+                    </a>
                     <span>Talk Drive</span>
                 </div>
                 <div class="icon-row__box">
@@ -108,18 +123,23 @@
         <div class="more-suggestion">
             <h4 class="more-suggestion__title">Suggestions</h4>
             <div class="more-suggestion__icons">
-                <div class="more-suggestion__icon">
-                    <div class="more-suggestion__icon-image">
-                        <i class="fas fa-quote-right"></i>
+                <a class="more-suggestion__icon" target="blank" href="https://www.kakaocorp.com/service/KakaoStory">
+                    <div>
+                        <div class="more-suggestion__icon-image">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <span class="more-suggestion__icon-text">Kokoa Story</span>
                     </div>
-                    <span class="more-suggestion__icon-text">Kokoa Story</span>
-                </div>
-                <div class="more-suggestion__icon">
-                    <div class="more-suggestion__icon-image">
-                        <i class="fas fa-quote-right"></i>
+                </a>
+
+                <a class="more-suggestion__icon" target="blank" href="https://www.kakaocorp.com/service/KakaoStory">
+                    <div>
+                        <div class="more-suggestion__icon-image">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <span class="more-suggestion__icon-text">Kokoa Story</span>
                     </div>
-                    <span class="more-suggestion__icon-text">Kokoa Story</span>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -163,6 +183,7 @@
     <script src="const.js"></script>
     <script src="load-color-setting.js"></script>
     <script src="load-color-setting-for-input.js"></script>
+    <script src="random-img.js"></script>
 </body>
 
 </html>

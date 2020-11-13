@@ -9,7 +9,7 @@
     <title>Welcome to Kokoa Talk Clone</title>
 </head>
 
-<body>
+<body class="yellow-body">
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No service</span>
@@ -26,25 +26,9 @@
         </div>
     </div>
 
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
-    </header>
- 
-    <form action="freinds.html" method="GET" id="login-form">
-        <input class="js-user-name-input" required name="username" type="text" placeholder="Name"/>
-        <input name="Password" type="Password" placeholder="Password"/>
-        <input type="submit" value="Log In" />
-        <a href="find-account.html">Find Kokoa Account or Password</a>
-        <div class="center-box">
-            <a href="instruction.html">Instruction</a>
-        </div>
-    </form>
-
-
-    <div class="splash-screen">
-        <i class="fas fa-comment"></i>
-    </div>
+    <main class="loop-screen">
+        <i class="fas fa-spinner loop-screen__spinner"></i>
+    </main>
 
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
     <script src="clock.js"></script>
