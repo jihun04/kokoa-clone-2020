@@ -55,3 +55,24 @@
   color: inherit;
   font-size: 13px;
 }
+
+#login-form a:last-child {
+  width: 100px;
+  margin-top: 30px;
+  animation: textAlarm 15s ease-in-out;
+}
+
+@keyframes textAlarm {
+  from {
+    background-color: rgba(207, 49, 47, 0.4);
+    border-radius: 0px;
+  }
+  to {
+    border-radius: 30px;
+  }
+}
+
+.center-box {
+  display: flex;
+  justify-content: center;
+}

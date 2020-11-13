@@ -12,7 +12,12 @@
   margin-left: 25px;
 }
 .screen-header i {
+  cursor: pointer;
   position: relative;
+  transition: transform 1s ease-in-out;
+}
+.screen-header i:hover {
+  transform: rotatez(180deg);
 }
 .screen-header__cog-notification {
   cursor: pointer;

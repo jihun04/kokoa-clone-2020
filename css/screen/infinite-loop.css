@@ -1,0 +1,19 @@
+.loop-screen {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loop-screen__spinner {
+  font-size: 90px;
+  animation: infiniteLoop 1.5s linear infinite;
+}
+@keyframes infiniteLoop {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}

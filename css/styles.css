@@ -23,6 +23,8 @@
 @import "screen/chat.css";
 @import "screen/error.css";
 @import "screen/bg-color-setting.css";
+@import "screen/instruction.css";
+@import "screen/infinite-loop.css";
 
 body {
   color: #2e363e;
@@ -52,4 +54,8 @@ body {
 }
 .showing {
   display: block;
+}
+
+.yellow-body {
+  background-color: var(--yellow);
 }
