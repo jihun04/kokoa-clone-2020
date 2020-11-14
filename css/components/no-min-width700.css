@@ -1,4 +1,4 @@
-.no-mobile {
+.no-min-width700 {
   position: absolute;
   top: 0;
   z-index: 99;
@@ -10,12 +10,12 @@
   align-items: center;
   font-size: 32px;
 }
-@media screen and (max-width: 700px) {
-  .no-mobile {
+@media screen and (min-width: 700px) {
+  .no-min-width700 {
     display: none;
   }
 }
-@media screen and (min-width: 701px) {
+@media screen and (max-width: 701px) {
   #chat-screen {
     height: 100vh;
   }
