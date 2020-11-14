@@ -12,6 +12,7 @@
 @import "components/alt-screen-header.css";
 @import "components/splash-screen.css";
 @import "components/no-mobile.css";
+@import "components/no-min-width700.css";
 
 /* screen */
 @import "screen/login.css";
@@ -25,6 +26,7 @@
 @import "screen/bg-color-setting.css";
 @import "screen/instruction.css";
 @import "screen/infinite-loop.css";
+@import "screen/egg.css";
 
 body {
   color: #2e363e;

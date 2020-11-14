@@ -1,4 +1,3 @@
- 
 <!DOCTYPE html>
 <html lang="kr">
 
@@ -6,10 +5,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kokoa Talk Clone</title>
+    <title>Egg - Kokoa Clone</title>
 </head>
 
-<body class="yellow-body">
+<body>
+    <img class="egg-bg-img" src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/serranoarevalo-avatar_rdjur3A.jpg"/>
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No service</span>
@@ -20,19 +20,30 @@
 
         </div>
         <div class="status-bar__column">
-            <span>110%</span>
+            <span>100%</span>
             <i class="fas fa-battery-full fa-lg"></i>
             <i class="fas fa-bolt"></i>
-        </div>
+        </div> 
     </div>
 
-    <main class="loop-screen">
-        <i class="fas fa-spinner loop-screen__spinner"></i>
+    <header class="account-screen-header">
+        <h1 class="account-screen__title">kokoa</h1>
+    </header>
+
+    <main class="account-screen-main egg-screen">
+        <span class="egg-span">This is Egg</span>
+        <a class="egg-a" href="https://nomadcoders.co/">Thank you, Nico.</a>
+        <img class="egg-img1" src="images/egg-img1.png"/>
+        <img class="egg-img2" src="https://yt3.ggpht.com/a/AATXAJzCX8YF_HYtAIhbmP7Ks1-Znxam4mjCh4TZU47STA=s176-c-k-c0x00ffffff-no-rj"/>
+        <span class="egg-tomato-span">tomato!</span>
     </main>
 
+    <div class="no-min-width700">
+        <span>Your screen is too small</span>
+    </div>
+    
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
     <script src="clock.js"></script>
-    <script src="save-user-name.js"></script>
     <script src="const.js"></script>
     <script src="load-color-setting.js"></script>
 </body>
