@@ -15,6 +15,10 @@
                 <span>No service</span>
                 <i class="fas fa-wifi no-wifi">
                     <div class="status-bar__bar"></div>
+                    <div class="check-wifi">
+                        <span>Check Wi-Fi</span>
+                        <i class="fas fa-times"></i>
+                    </div>
                 </i>
             </div>
             <div class="status-bar__column">
@@ -73,7 +77,11 @@
         </div>
     </main>
 
-    <form class="reply" action="find-account.html" >
+    <div class="main-screen__blank">
+        <span class="....."></span>
+    </div>
+
+    <form class="reply">
         <div class="reply__column"><i class="far fa-plus-square fa-lg"></i></div>
         <div class="reply__column">
             <input required type="text" placeholder="Write a message">
@@ -90,6 +98,8 @@
 
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
     <script src="clock.js"></script>
+    <script src="chat.js"></script>
+    <script src="check-wifi.js"></script>
 </body>
 
 </html>

@@ -2,9 +2,6 @@
 #chat-screen {
   background-color: #abc1d1;
 }
-#chat-screen {
-  height: 200vh;
-}
 @keyframes fadeIn {
   from {
     transform: translateY(20px);
@@ -185,4 +182,30 @@
 }
 .reply:focus-within {
   transform: translateY(80px);
+}
+
+.message__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chat-btn-box {
+  background-color: white;
+  margin-top: 5px;
+  padding: 4px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.chat-btn-box i {
+  padding: 0 6px;
+  cursor: pointer;
+}
+.chat-del-btn {
+  font-size: 15px;
+  color: #f66f5b;
+  border-left: var(--main-border);
+}
+.chat-ref-btn {
+  font-size: 12px;
 }
