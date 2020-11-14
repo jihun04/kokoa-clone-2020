@@ -1,9 +1,14 @@
 const reply = document.querySelector(".reply"),
 replyInput = reply.querySelector("input"),
-main = document.querySelector("main");
+main = document.querySelector("main"),
+delChatBtn = main.querySelector(".chat-del-btn"),
+refChatBtn = main.querySelector(".chat-ref-btn");
+
+let chats = [];
+let chatsNumber = [];
 
 const CHAT_LS = "chats",
-chats = [],
+CHATNUMBER_LS = "chats-number"
 MESSAGEROW_CN = "message-row",
 MESSAGEROWOWN_CN = "message-row--own",
 MESSAGEROWCONTENT_CN = "message-row__content",
@@ -18,18 +23,38 @@ DELBTN_CN = "chat-del-btn",
 REFBTN_CN = "chat-ref-btn",
 MESSAGECOLUMN_CN = "message__column";
 
+function countNumber() {
+    const newId = chatsNumber.length + 1;
+    const chatsNumberObj = {
+        id: newId
+    }
+    chatsNumber.push(chatsNumberObj);
+}
+
 function loadChat() {
     const currentChat = localStorage.getItem(CHAT_LS);
-    if(currentChat !== null) {
+    const currentChatNumber = localStorage.getItem(CHATNUMBER_LS);
+    if(currentChat !== "[]") {
         const parsedChat = JSON.parse(currentChat);
         parsedChat.forEach(function(chat) {
             paintChat(chat.text, chat.time);
+        });
+    } else {
+        chatsNumber = [];
+        saveChats();
+    }
+    
+    if(currentChatNumber !== null) {
+        const parsedChatNumber = JSON.parse(currentChatNumber);
+        parsedChatNumber.forEach(function() {
+            countNumber();
         });
     }
 }
 
 function saveChats() {
     localStorage.setItem(CHAT_LS, JSON.stringify(chats));
+    localStorage.setItem(CHATNUMBER_LS, JSON.stringify(chatsNumber));
 }
 
 function paintChat(text, time) {
@@ -42,6 +67,8 @@ function paintChat(text, time) {
     const btnBox = document.createElement("div");
     const delBtn = document.createElement("i");
     const refBtn = document.createElement("i");
+    delBtn.addEventListener("click", handleDelClick);
+    refBtn.addEventListener("click", handleRefClick);
     messageRow.classList.add(MESSAGEROW_CN);
     messageRow.classList.add(MESSAGEROWOWN_CN);
     messageRowContent.classList.add(MESSAGEROWCONTENT_CN);
@@ -71,7 +98,7 @@ function paintChat(text, time) {
     const minutes = date.getMinutes();
     const currentTime = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}`;
     const savedTime = time;
-    const newId = chats.length + 1;
+    const newId = chatsNumber.length + 1;
     messageRow.id = newId;
     if(savedTime !== undefined) {
         messageTime.innerText = savedTime;
@@ -82,7 +109,7 @@ function paintChat(text, time) {
         };
         chats.push(chatObj);
     } else {
-        messageTime.innerText = currentTime;
+        messageTimeinnerText = currentTime;
         const chatObj = {
             text: text,
             time: currentTime,
@@ -90,6 +117,7 @@ function paintChat(text, time) {
         };
         chats.push(chatObj);
     }
+    countNumber();
     saveChats();
 }
 
@@ -98,6 +126,34 @@ function handleReplySubmit(event) {
     const currentChat = replyInput.value;
     paintChat(currentChat);
     replyInput.value = "";
+}
+
+function handleDelClick(event) {
+    const delBtn = event.target;
+    const messageRow = delBtn.parentNode.parentNode.parentNode.parentNode.parentNode;
+    main.removeChild(messageRow);
+    const cleanChats = chats.filter(function(chat) {
+        return parseInt(messageRow.id) !== chat.id;
+    });
+    chats = cleanChats;
+    saveChats();
+}
+
+function handleRefClick(event) {
+    const refBtn = event.target;
+    const messageRow = refBtn.parentNode.parentNode.parentNode.parentNode.parentNode;
+    const reSendMessage = chats.filter(function(chat) {
+        return parseInt(messageRow.id) === chat.id;
+    });
+    reSendMessage.forEach(function(chat) {
+        paintChat(chat.text, chat.time);
+    })
+    main.removeChild(messageRow);
+    const cleanChats = chats.filter(function(chat) {
+        return parseInt(messageRow.id) !== chat.id;
+    });
+    chats = cleanChats
+    saveChats();
 }
 
 function init() {
