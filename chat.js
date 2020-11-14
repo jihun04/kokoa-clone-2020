@@ -34,12 +34,14 @@ function countNumber() {
 function loadChat() {
     const currentChat = localStorage.getItem(CHAT_LS);
     const currentChatNumber = localStorage.getItem(CHATNUMBER_LS);
-    if(currentChat !== "[]") {
+    if(currentChat !== null) {
         const parsedChat = JSON.parse(currentChat);
         parsedChat.forEach(function(chat) {
             paintChat(chat.text, chat.time);
         });
-    } else {
+    } 
+    
+    if(currentChat === "[]") {
         chatsNumber = [];
         saveChats();
     }
