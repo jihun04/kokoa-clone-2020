@@ -112,3 +112,22 @@
     transform: none;
   }
 }
+
+.check-wifi {
+  background-color: #ca9da8;
+  z-index: 2;
+  position: absolute;
+  top: 22px;
+  left: 10px;
+  display: flex;
+  padding: 5px 8px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+}
+.check-wifi > i {
+  cursor: pointer;
+  margin-left: 2px;
+}
+.check-wifi > span {
+  width: 91px;
+}

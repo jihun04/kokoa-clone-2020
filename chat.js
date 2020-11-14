@@ -109,7 +109,7 @@ function paintChat(text, time) {
         };
         chats.push(chatObj);
     } else {
-        messageTimeinnerText = currentTime;
+        messageTime. innerText = currentTime;
         const chatObj = {
             text: text,
             time: currentTime,
