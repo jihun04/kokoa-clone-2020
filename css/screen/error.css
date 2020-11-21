@@ -14,7 +14,8 @@
 }
 .error-text span {
   text-align: center;
-  font-size: 30px;
+  font-size: 100px;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 .error-text h4 {
