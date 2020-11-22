@@ -13,7 +13,7 @@ function saveAvatarImg(text) {
     localStorage.setItem(AVATARIMG_LS, text);
 }
 
-function changeImg() {
+function changeOwnImg() {
     const randomNumber = genRandom();
     userAvatarImg.src = `images/${randomNumber + 1}.jpg`;
     saveAvatarImg(userAvatarImg.src);
@@ -28,7 +28,7 @@ function loadAvatarImg() {
 
 function init() {
     loadAvatarImg();
-    userComponentOwn.addEventListener("click", changeImg);
+    userComponentOwn.addEventListener("click", changeOwnImg);
 }
 
 init();
