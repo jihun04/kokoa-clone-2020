@@ -36,3 +36,6 @@
 .screen-header__icon .fa-cog:hover {
   animation: rotateIcon 0.5s linear infinite;
 }
+.screen-header-box-shadow {
+  box-shadow: 0 5px 1em -1em black;
+}
