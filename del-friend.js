@@ -3,7 +3,7 @@ const delFriendBtn = customUser.querySelector(".del-friend-btn");
 function handleDelFriendClick() {
     localStorage.removeItem(CUSTOMNAME_LS);
     askCustomUerName();
-    friendNth.innerText = 3;
+    friendNth.innerText = 2;
 }
 
 function init() {
