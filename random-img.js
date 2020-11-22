@@ -23,6 +23,8 @@ function loadAvatarImg() {
     const currentAvatarImg = localStorage.getItem(AVATARIMG_LS);
     if(currentAvatarImg !== null) {
         userAvatarImg.src = currentAvatarImg;
+    } else {
+        userAvatarImg.src = `images/profileimg.jpg`
     }
 }
 

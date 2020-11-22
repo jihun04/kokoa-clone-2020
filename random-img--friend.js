@@ -17,6 +17,8 @@ function loadAvatarImg() {
     const currentCustomAvatarImg = localStorage.getItem(CUSTOMAVATARIMG_LS);
     if(currentCustomAvatarImg !== null) {
         customUserAvatarImg.src = currentCustomAvatarImg;
+    } else {
+        customUserAvatarImg.src = `images/profileimg.jpg`
     }
 }
 
