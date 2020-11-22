@@ -18,19 +18,50 @@
   position: relative;
   opacity: 0;
 }
-.nav__li:first-child {
-  animation: friendsIconAnimation 3s ease-in-out forwards;
-  animation-delay: 1s;
-}
-.nav__li:nth-child(2) {
-  top: -10px;
-  left: -60px;
-  animation: chatsIconAnimation 3s ease-in-out forwards;
-  animation-delay: 1s;
-}
 .nav__a i {
   position: relative;
   font-size: 25px;
+}
+.nav__li:first-child {
+  animation: appearBtnAnimation 2s ease-in-out forwards;
+}
+.nav__li:nth-child(2) {
+  top: -10px;
+  left: -30%;
+  animation: chatsIconAnimation 2s ease-in-out forwards;
+}
+.nav__li:nth-child(3) {
+  opacity: 1;
+  transform: translateX(1300%);
+  animation: findIconAnimation 1s ease-in-out forwards;
+}
+.nav__li:last-child {
+  animation: moreIconAnimation 0.5s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+@keyframes moreIconAnimation {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    transfrom: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes findIconAnimation {
+  0% {
+    transform: translateX(1300%) rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
 @keyframes chatsIconAnimation {
   0% {
@@ -45,7 +76,20 @@
     opacity: 1;
   }
 }
-@keyframes friendsIconAnimation {
+@keyframes chatsIconAnimation {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+}
+@keyframes appearBtnAnimation {
   0% {
     opacity: 0;
   }
@@ -83,7 +127,7 @@
   left: 15px;
   bottom: 15px;
   animation: notificationAnimation 2s ease-in-out infinite,
-    friendsIconAnimation 1s ease-in-out forwards;
+    appearBtnAnimation 1s ease-in-out forwards;
   animation-delay: 3s;
 }
 .nav__ellipsis__notification {
