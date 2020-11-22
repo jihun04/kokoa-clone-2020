@@ -16,7 +16,7 @@ function paintCustomUser() {
     addForm.classList.remove(SHOWING_CN); 
     customUser.classList.add(SHOWING_CN);
     friendHeader.classList.remove(MARGINBOTTOM25PX);
-    friendNth.innerText = 4;
+    friendNth.innerText = 3;
     const currentCustomName = localStorage.getItem(CUSTOMNAME_LS);
     customName.innerText = currentCustomName;
 }
