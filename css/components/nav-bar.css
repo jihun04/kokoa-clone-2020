@@ -23,12 +23,12 @@
   font-size: 25px;
 }
 .nav__li:first-child {
-  animation: appearBtnAnimation 2s ease-in-out forwards;
+  animation: appearBtnAnimation 1s ease-in-out forwards;
 }
 .nav__li:nth-child(2) {
   top: -10px;
   left: -30%;
-  animation: chatsIconAnimation 2s ease-in-out forwards;
+  animation: chatsIconAnimation 1s ease-in-out forwards;
 }
 .nav__li:nth-child(3) {
   opacity: 1;
@@ -36,7 +36,7 @@
   animation: findIconAnimation 1s ease-in-out forwards;
 }
 .nav__li:last-child {
-  animation: moreIconAnimation 0.5s ease-in-out forwards;
+  animation: moreIconAnimation 0.7s ease-in-out forwards;
   animation-delay: 0.3s;
 }
 @keyframes moreIconAnimation {
@@ -128,12 +128,12 @@
   bottom: 15px;
   animation: notificationAnimation 2s ease-in-out infinite,
     appearBtnAnimation 1s ease-in-out forwards;
-  animation-delay: 3s;
+  animation-delay: 1s;
 }
 .nav__ellipsis__notification {
   opacity: 0;
-  animation: appearIconAnimation 0.3s ease-in-out forwards;
-  animation-delay: 3s;
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
+  animation-delay: 1s;
   position: absolute;
   right: -4px;
   top: -4px;
