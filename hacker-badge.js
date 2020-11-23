@@ -1,4 +1,4 @@
-const hackerBadge = hackerUserComponentColumnLastChild.querySelector(".hacker-badge");
+const hackerBadge = document.querySelector(".hacker-badge");
 
 const CHAT_LS = "chats";
 
