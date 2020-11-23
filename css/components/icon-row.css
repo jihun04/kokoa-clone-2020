@@ -9,9 +9,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.icon-row__box > * {
   transition: all 0.3s ease-in-out;
 }
-.icon-row__box:hover {
+.icon-row__box:hover > * {
   transform: scale(1.2);
   color: #b63e40;
 }
