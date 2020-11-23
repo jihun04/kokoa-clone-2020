@@ -17,6 +17,10 @@
 .nav__li {
   position: relative;
   opacity: 0;
+  transition: color 0.3s ease-in-out;
+}
+.nav__li:hover {
+  color: rgba(46, 54, 62, 0.5);
 }
 .nav__a i {
   position: relative;
