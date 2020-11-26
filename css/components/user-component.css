@@ -9,7 +9,13 @@
 }
 .user-component:hover {
   background-color: #f2f2f3;
-  border-radius: 21px;
+  border-radius: 1.6em;
+}
+.user-component--sm:hover {
+  border-radius: 1.35em;
+}
+.user-component--xl:hover {
+  border-radius: 1.87em;
 }
 .user-component,
 .user-component__column:first-child {
