@@ -11,11 +11,11 @@
   justify-content: center;
   margin-left: 3px;
 }
-.more-screen .user-component:hover {
-  background-color: white;
-}
 .more-screen .user-component {
   margin-bottom: 35px;
+}
+.more-screen .usercomponent__column:last-child {
+  margin-right: 5px;
 }
 .more-screen__icons {
   margin-bottom: 50px;
